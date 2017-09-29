@@ -21,10 +21,10 @@
     </div>
 
     <h2>Amazon API Gateway with Cognito authorization</h2>
-    <span>
+    <p>
       Below is an live example of an authenticated API request.<br />
       The API has been setup with a Cognito Authorizer, as per <a href="http://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html#apigateway-enable-cognito-user-pool" target="_blank">this guide</a>.
-    </span>
+    </p>
     <div class="code">
       <pre>{{response}}</pre>
     </div>

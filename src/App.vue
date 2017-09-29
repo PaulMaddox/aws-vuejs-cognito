@@ -85,6 +85,10 @@ header span {
   padding-top: 12px;
 }
 
+pre {
+  font-size: 10px;
+}
+
 .btn {
   vertical-align: middle;
 }
