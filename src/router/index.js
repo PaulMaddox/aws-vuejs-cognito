@@ -57,7 +57,7 @@ router.beforeEach((to, from, next) => {
       }
     } else {
       if (store.getters.isAuthenticated) {
-        router.push({ name: 'index' })
+        router.push({ name: 'home' })
       } else {
         next()
       }
