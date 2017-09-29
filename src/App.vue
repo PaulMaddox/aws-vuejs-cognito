@@ -86,7 +86,7 @@ header span {
 }
 
 pre {
-  font-size: 10px;
+  font-size: 10px !important;
 }
 
 .btn {
