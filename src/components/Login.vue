@@ -5,7 +5,8 @@
     <p>The links below are an example of signing in with federated providers, using a custom UI:</p>
     <a href="#" @click="authenticate('Facebook')">Facebook</a>, 
     <a href="#" @click="authenticate('Google')">Google</a>, 
-    <a href="#" @click="authenticate('LoginWithAmazon')">Amazon</a>
+    <a href="#" @click="authenticate('LoginWithAmazon')">Amazon</a>, 
+    <a href="#" @click="authenticate('GoogleApps-SAML')">Google Apps (SAML)</a>
   </div>
 </template>
 
