@@ -1,21 +1,26 @@
 <template>
   <div>
-    <h1>Hello {{name}}</h1>
-    Access Token:
+    <h1>Hello {{profile.name}}</h1>
+    <p>You have successfully logged authenticated with Cognito User Pools.</p>
+  
+    <h2>Profile:</h2>
+    <p></p>
+    <div class="code">
+      <pre>{{profile}}</pre>
+    </div>
+    <h2>Access Token:</h2>
     <div class="code">
       <pre>{{accessToken}}</pre>
     </div>
-    ID Token:
+    <h2>ID Token:</h2>
     <div class="code">
       <pre>{{idToken}}</pre>
     </div>
+    <h2>Amazon API Gateway with Cognito authorization</h2>
     <span>Below is an live example of an authenticated API request:</span>
-    
     <div class="code">
       <pre>{{response}}</pre>
     </div>
-  </pre>
-
   </div>
 </template>
 
@@ -35,8 +40,8 @@ export default {
     idToken () {
       return this.$store.getters.idToken
     },
-    name () {
-      return this.$store.getters.profile.name
+    profile () {
+      return this.$store.getters.profile
     }
   },
   created () {
