@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Not Authenticated</h1>
-    <p>Cognito can provide a fully hosted user interface for sign-up, sign-in, account verification and forgotten password routines. This makes integrating Cognito into your applications fast and easy. The user interface can be customised with CSS overrides for lots of the components (including the logo).</p>
-    <p>To see an example of the Cognito hosted user interface, use the sign-in button below:</p>
+    <p><a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> can provide a fully hosted user interface for sign-up, sign-in, account verification and forgotten password routines. This means securing your Vue.js applications is fast and easy. The user interface can be customised with CSS overrides for lots of the components (including the logo).</p>
+    <p>To see an example of the <a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> hosted user interface, use the sign-in button below:</p>
     <button @click="authenticate()" class="btn btn-outline-dark"><icon name="sign-in"></icon>Cognito Hosted UI</button>
     <br />
     <br />
@@ -16,6 +16,8 @@
       <button @click="authenticate('LoginWithAmazon')" class="btn btn-outline-dark"><icon name="amazon"></icon>Amazon</button>
       <button @click="authenticate('GoogleApps-SAML')" class="btn btn-outline-dark"><icon name="id-card-o"></icon>SAML: Google Apps</button>
     </p>
+
+    <p>Once signed in, you'll see details (and live examples) of how to use <a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> and <a href="https://aws.amazon.com/api-gateway/" target="_blank">Amazon API Gateway</a> to secure access to your backend APIs too.</p>
 
     <p>
       The full source code for this example application is available here:<br />
