@@ -2,7 +2,7 @@
   <div>
 
     <h1>Hello {{firstname}}</h1>
-    <p>You have successfully logged authenticated with Cognito User Pools.</p>
+    <p>You have successfully signed in with Cognito User Pools.</p>
 
     <h2>Profile:</h2>
     <p></p>
