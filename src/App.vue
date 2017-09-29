@@ -2,7 +2,7 @@
   <div id="app">
     <header>
         <img src="./assets/logo.png" alt="AWS">
-        <span>AWS Cognito with Vue.js</span>
+        <span>Amazon Cognito with Vue.js</span>
         <profile></profile>
     </header>
     <main>
