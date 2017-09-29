@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <header>
-        <img src="./assets/logo.png" alt="AWS">
-        <span>Amazon Cognito with Vue.js</span>
-        <profile></profile>
-    </header>
-    <main>
-      <router-view></router-view>
-    </main>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-left" href="#"><img src="./assets/logo.png"></a>
+          <a class="navbar-brand" href="#">Amazon Cognito with Vue.js</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <profile></profile>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <main>
+        <router-view></router-view>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -41,7 +49,8 @@ body {
 
 main {
   margin-top: 40px;
-  margin-left: 56px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .fa-icon {
@@ -62,7 +71,7 @@ a {
   color: #35495E;
 }
 
-header {
+nav {
   margin: 0;
   height: 56px;
   padding: 0 16px 0 24px;
@@ -70,19 +79,15 @@ header {
   color: #ffffff;
 }
 
-header img {
+.navbar-brand {
+  color: #ffffff;
+}
+
+nav img {
   display: inline-block;
   vertical-align: middle;
   height: 28px;
-  margin-top: 16px;
-}
-
-header span {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 24px;
-  padding-left: 16px;
-  padding-top: 12px;
+  margin-right: 16px;
 }
 
 pre {

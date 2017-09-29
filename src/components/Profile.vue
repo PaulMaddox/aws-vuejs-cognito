@@ -1,7 +1,9 @@
 <template>
     <div class="header">
-        <a v-if="!isAuthenticated" @click="authenticate()">Sign in</a>
-        <a v-if="isAuthenticated" @click="signout()">Sign out</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li v-if="!isAuthenticated" @click="authenticate()">Sign in</li>
+        <li v-if="isAuthenticated" @click="signout()">Sign out</li>
+      </ul>
     </div>
 </template>
 
