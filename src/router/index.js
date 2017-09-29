@@ -32,10 +32,6 @@ const router = new Router({
       path: '/callback',
       name: 'callback',
       component: Callback,
-      query: {
-        code: 'code',
-        state: 'state'
-      },
       meta: {
         title: 'Authenticating...',
         auth: false
@@ -45,9 +41,13 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
+  // Use the page's router title to name the page
   if (to.meta && to.meta.title) {
     document.title = to.meta.title
   }
+
+  // Redirect to the login page if not authenticated
+  // for pages that have 'auth: true' set
   if (to.meta && to.meta.auth !== undefined) {
     if (to.meta.auth) {
       if (store.getters.isAuthenticated) {
