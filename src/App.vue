@@ -51,6 +51,7 @@ main {
   margin-top: 40px;
   margin-left: 32px;
   margin-right: 32px;
+  padding-bottom: 32px;
 }
 
 .fa-icon {

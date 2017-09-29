@@ -28,6 +28,10 @@
     <div class="code">
       <pre>{{response}}</pre>
     </div>
+
+    <h2>Source Code</h2>
+    <p>The full source code for this example application is available here:</p>
+    <a href="https://github.com/paulmaddox/aws-vuejs-cognito" target="_blank">https://github.com/paulmaddox/aws-vuejs-cognito</a>
     
   </div>
 </template>

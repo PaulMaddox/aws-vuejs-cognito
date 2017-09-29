@@ -6,13 +6,22 @@
     <button @click="authenticate()" class="btn btn-outline-dark"><icon name="sign-in"></icon>Cognito Hosted UI</button>
     <br />
     <br />
-    <p>It's also possible to integrate Cognito with your own user interface, allowing for a 100% custom sign-in experience.</p>
-    <p>These buttons skip the hosted UI entirely, and sign-in with the federated providers directly.</p>
+    <p>
+      It's also possible to integrate Cognito with your own user interface, allowing for a 100% custom sign-in experience.<br />
+      These buttons skip the hosted UI entirely, and sign-in with the federated providers directly.
+    </p>
+    <p>
       <button @click="authenticate('Facebook')" class="btn btn-outline-dark"><icon name="facebook-official"></icon>Facebook</button>
       <button @click="authenticate('Google')" class="btn btn-outline-dark"><icon name="google"></icon>Google</button>
       <button @click="authenticate('LoginWithAmazon')" class="btn btn-outline-dark"><icon name="amazon"></icon>Amazon</button>
       <button @click="authenticate('GoogleApps-SAML')" class="btn btn-outline-dark"><icon name="id-card-o"></icon>SAML: Google Apps</button>
     </p>
+
+    <p>
+      The full source code for this example application is available here:<br />
+      <a href="https://github.com/paulmaddox/aws-vuejs-cognito" target="_blank">https://github.com/paulmaddox/aws-vuejs-cognito</a>
+    </p>
+    
   </div>
 </template>
 
