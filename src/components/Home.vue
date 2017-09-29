@@ -1,7 +1,7 @@
 <template>
   <div>
-    
-    <h1>Hello {{profile.name}}</h1>
+
+    <h1>Hello {{firstname}}</h1>
     <p>You have successfully logged authenticated with Cognito User Pools.</p>
 
     <h2>Profile:</h2>
@@ -21,7 +21,10 @@
     </div>
 
     <h2>Amazon API Gateway with Cognito authorization</h2>
-    <span>Below is an live example of an authenticated API request:</span>
+    <span>
+      Below is an live example of an authenticated API request.<br />
+      The API has been setup with a Cognito Authorizer, as per <a href="http://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-integrate-with-cognito.html#apigateway-enable-cognito-user-pool" target="_blank">this guide</a>.
+    </span>
     <div class="code">
       <pre>{{response}}</pre>
     </div>
@@ -32,7 +35,7 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'index',
+  name: 'home',
   data: function () {
     return {
       response: 'unknown'
@@ -47,6 +50,9 @@ export default {
     },
     profile () {
       return this.$store.getters.profile
+    },
+    firstname () {
+      return this.$store.getters.profile.name.split(' ')[0]
     }
   },
   created () {

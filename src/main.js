@@ -7,6 +7,16 @@ import store from './store/index.js'
 
 Vue.config.productionTip = false
 
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+
+// FontAwesome icons
+import Icon from 'vue-awesome/components/Icon'
+Vue.component('icon', Icon)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

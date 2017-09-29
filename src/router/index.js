@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
+import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Callback from '@/components/Callback'
 import store from '../store'
@@ -12,10 +12,10 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: Index,
+      name: 'home',
+      component: Home,
       meta: {
-        title: 'aws-vuejs-cognito',
+        title: 'Home',
         auth: true
       }
     },

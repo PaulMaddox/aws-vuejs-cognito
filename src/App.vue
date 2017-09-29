@@ -13,6 +13,7 @@
 
 <script>
 import Profile from '@/components/Profile'
+
 export default {
   name: 'app',
   computed: {
@@ -52,6 +53,15 @@ main {
   max-height: 100%;
 } 
 
+h1, h2 {
+  font-weight: normal;
+  padding-bottom: 16px;
+}
+
+a {
+  color: #35495E;
+}
+
 header {
   margin: 0;
   height: 56px;
@@ -60,19 +70,11 @@ header {
   color: #ffffff;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-a {
-  color: #35495E;
-}
-
 header img {
   display: inline-block;
   vertical-align: middle;
   height: 28px;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 header span {
@@ -81,6 +83,24 @@ header span {
   font-size: 24px;
   padding-left: 16px;
   padding-top: 12px;
+}
+
+.btn {
+  vertical-align: middle;
+}
+
+.btn .fa-icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  vertical-align: middle;
+}
+
+.btn .fa-icon:last-child {
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 </style>

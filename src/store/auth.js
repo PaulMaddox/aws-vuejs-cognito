@@ -58,7 +58,7 @@ export default {
       context.commit('setAccessToken', payload.accessToken)
       context.commit('setIdToken', payload.idToken)
       context.commit('setAuthenticated', true)
-      router.push({ name: 'index' })
+      router.push({ name: 'home' })
     }
   }
 }
