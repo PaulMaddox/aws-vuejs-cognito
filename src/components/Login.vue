@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>Not Authenticated</h1>
-    <p><a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> can provide a fully hosted user interface for sign-up, sign-in, account verification and forgotten password routines. This means securing your Vue.js applications is fast and easy. The user interface can be customised with CSS overrides for lots of the components (including the logo).</p>
+    <p><a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> lets you easily add user sign-up and sign-in to your mobile and web apps. With <a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a>, you also have the options to authenticate users through social identity providers such as Facebook, Twitter, or Amazon, with SAML identity solutions, or by using your own identity system.</p>
+    <p><a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> can provide a fully hosted user interface for sign-up, sign-in, account verification and forgotten password routines. This makes securing your Vue.js applications quick and easy. The user interface can be customised with CSS overrides for lots of the components (including the logo).</p>
     <p>To see an example of the <a href="https://aws.amazon.com/cognito" target="_blank">Amazon Cognito</a> hosted user interface, use the sign-in button below:</p>
     <button @click="authenticate()" class="btn btn-outline-dark"><icon name="sign-in"></icon>Cognito Hosted UI</button>
     <br />
