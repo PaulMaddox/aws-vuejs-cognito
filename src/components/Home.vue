@@ -79,24 +79,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-.code {
-  display: inline-block;
-  padding-top: 0px;
-  width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.code pre {
-    margin-right: 56px;
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-</style>

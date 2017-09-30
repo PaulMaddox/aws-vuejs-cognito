@@ -13,7 +13,7 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container">
       <main>
         <router-view></router-view>
       </main>
@@ -33,8 +33,36 @@ export default {
 </script>
 
 <style> 
+
 body {
-  margin: 0;
+  margin: 0px;
+}
+
+.container {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+} 
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* .container{
+      max-width: 970px;
+  } */
 }
 
 #app {
@@ -45,10 +73,7 @@ body {
 }
 
 main {
-  margin-top: 40px;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding-bottom: 32px;
+
 }
 
 .fa-icon {
@@ -94,6 +119,11 @@ nav img {
 
 pre {
   font-size: 10px !important;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .btn {
