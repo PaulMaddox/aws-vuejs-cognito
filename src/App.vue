@@ -43,9 +43,9 @@ main .container-fluid {
 }
 
 h1, h2 {
-  font-weight: normal;
+  font-weight: normal !important;
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -55,7 +55,7 @@ h1, h2 {
  }
  h1 {
    margin-top: 12px;
-   margin-bottom: 24px;
+   margin-bottom: 24px !important;
  }
 }
 
@@ -66,7 +66,7 @@ h1, h2 {
  }
   h1 {
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
  }
 }
 
