@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - npm install
+      - npm run build
+      - aws s3 cp --recursive dist/ s3://cognito-user-pools/ 
+
+artifacts:
+  type: zip
+  files:
+    - dist
