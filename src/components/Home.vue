@@ -4,18 +4,18 @@
     <h1>Hello {{firstname}}</h1>
     <p>You have successfully signed in with Cognito User Pools.</p>
 
-    <h2>Profile:</h2>
+    <h2>Profile</h2>
     <p></p>
     <div class="code">
       <pre>{{profile}}</pre>
     </div>
 
-    <h2>Access Token:</h2>
+    <h2>Access Token</h2>
     <div class="code">
       <pre>{{accessToken}}</pre>
     </div>
 
-    <h2>ID Token:</h2>
+    <h2>ID Token</h2>
     <div class="code">
       <pre>{{idToken}}</pre>
     </div>
