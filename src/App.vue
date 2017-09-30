@@ -44,7 +44,8 @@ main .container-fluid {
 
 h1, h2 {
   font-weight: normal;
-  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -53,7 +54,8 @@ h1, h2 {
     padding: 24px;
  }
  h1 {
-   margin-bottom: 12px;
+   margin-top: 12px;
+   margin-bottom: 24px;
  }
 }
 
@@ -63,7 +65,8 @@ h1, h2 {
     padding: 36px;
  }
   h1 {
-   margin-bottom: 18px;
+    margin-top: 0px;
+    margin-bottom: 24px;
  }
 }
 
