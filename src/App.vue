@@ -39,37 +39,29 @@ body {
 }
 
 main .container-fluid {
-  margin-top: 22px;
-  margin-bottom: 28px;
+  padding: 16px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-  
+  main .container-fluid {
+    padding: 24px;
+ }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   main .container-fluid {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 36px;
  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  main .container-fluid {
-    padding-left: 36px;
-    padding-right: 36px;
- }
 } 
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  main .container-fluid {
-    padding-left: 48px;
-    padding-right: 48px;
- }
 }
 
 #app {
