@@ -42,10 +42,18 @@ main .container-fluid {
   padding: 16px;
 }
 
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   main .container-fluid {
     padding: 24px;
+ }
+ h1 {
+   margin-bottom: 12px;
  }
 }
 
@@ -53,6 +61,9 @@ main .container-fluid {
 @media (min-width: 768px) { 
   main .container-fluid {
     padding: 36px;
+ }
+  h1 {
+   margin-bottom: 18px;
  }
 }
 
@@ -71,10 +82,6 @@ main .container-fluid {
   color: #2c3e50;
 }
 
-main {
-
-}
-
 .fa-icon {
   width: auto;
   height: 1em; /* or any other relative font sizes */
@@ -83,11 +90,6 @@ main {
   max-width: 100%;
   max-height: 100%;
 } 
-
-h1, h2 {
-  font-weight: normal;
-  padding-bottom: 16px;
-}
 
 a {
   color: #35495E;
