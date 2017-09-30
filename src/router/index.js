@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Callback from '@/components/Callback'
+import ErrorMsg from '@/components/ErrorMsg'
 import store from '../store'
 
 Vue.use(Router)
@@ -34,6 +35,16 @@ const router = new Router({
       component: Callback,
       meta: {
         title: 'Authenticating...',
+        auth: false
+      }
+    },
+    {
+      path: '/error',
+      name: 'error',
+      component: ErrorMsg,
+      props: true,
+      meta: {
+        title: 'Error',
         auth: false
       }
     }

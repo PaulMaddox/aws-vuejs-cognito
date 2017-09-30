@@ -3,9 +3,9 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-left" href="#"><img src="./assets/logo.png"></a>
+          <a class="navbar-left" href="/"><img src="./assets/logo.png"></a>
           <div class="navbar-brand navbar-text d-none d-sm-inline">
-            <a class="navbar-brand" href="#">Amazon Cognito with Vue.js</a>
+            <a class="navbar-brand" href="/">Amazon Cognito with Vue.js</a>
           </div>
         </div>
         <ul class="nav navbar-nav navbar-right">
@@ -26,11 +26,6 @@ import Profile from '@/components/Profile'
 
 export default {
   name: 'app',
-  computed: {
-    isAuthenticated () {
-      return this.$store.state.auth.isAuthenticated
-    }
-  },
   components: {
     Profile
   }

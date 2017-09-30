@@ -45,12 +45,12 @@ export default {
     },
     authenticate: function (context, payload) {
       if (payload.verification === null || payload.verification !== context.getters.verification) {
-        console.log('Warning: authentication response had an invalid verifiction state')
+        router.push({ name: 'error', params: { message: 'The verification state in the authentication response did not match our original request' } })
         return
       }
 
-      if (payload.idToken === null) {
-        console.log('Warning: authentication response did not include an ID token')
+      if (payload.idToken === null || (jwt(payload.idToken).token_use || null) !== 'id') {
+        router.push({ name: 'error', params: { message: 'The authentication response did not include a valid ID token' } })
         return
       }
 
