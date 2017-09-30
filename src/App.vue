@@ -81,6 +81,10 @@ nav {
   color: #ffffff;
 }
 
+nav a:hover{
+    color: inherit; /* Inherits color property from its parent */
+}
+
 nav img {
   display: inline-block;
   vertical-align: middle;

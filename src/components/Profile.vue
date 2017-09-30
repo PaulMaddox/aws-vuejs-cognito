@@ -30,18 +30,7 @@ export default {
 </script>
 
 <style>
-
-.header {
-  float: right;
-  line-height: 56px;
-  vertical-align: middle;
+.header li {
+  cursor: pointer;
 }
-
-.header a {
-  line-height: 56px;
-  font-size: 16px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
 </style>
