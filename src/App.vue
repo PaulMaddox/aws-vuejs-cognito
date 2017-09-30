@@ -13,11 +13,11 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
       <main>
-        <router-view></router-view>
+        <div class="container-fluid">
+          <router-view></router-view>
+        </div>
       </main>
-    </div>
   </div>
 </template>
 
@@ -38,8 +38,8 @@ body {
   margin: 0px;
 }
 
-.container {
-  margin-top: 28px;
+main .container-fluid {
+  margin-top: 22px;
   margin-bottom: 28px;
 }
 
@@ -50,19 +50,26 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-
+  main .container-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+ }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
+  main .container-fluid {
+    padding-left: 36px;
+    padding-right: 36px;
+ }
 } 
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  /* .container{
-      max-width: 970px;
-  } */
+  main .container-fluid {
+    padding-left: 48px;
+    padding-right: 48px;
+ }
 }
 
 #app {
