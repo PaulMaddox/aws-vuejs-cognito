@@ -42,7 +42,7 @@ main .container-fluid {
   padding: 16px;
 }
 
-main h1, h2 {
+main h1, main h2 {
   font-weight: normal;
   margin-top: 8px;
   margin-bottom: 16px;
