@@ -8,7 +8,9 @@
 </template>
 
 <script>
+
 import auth from '../services/auth'
+
 export default {
   name: 'profile',
   computed: {

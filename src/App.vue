@@ -98,15 +98,12 @@ pre {
 
 .btn {
   vertical-align: middle;
+  margin: 4px;
 }
 
 .btn .fa-icon {
   vertical-align: middle;
   margin-right: 0.5rem;
-}
-
-.btn {
-  vertical-align: middle;
 }
 
 .btn .fa-icon:last-child {
